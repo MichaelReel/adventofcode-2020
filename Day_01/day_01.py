@@ -19,6 +19,6 @@ for ind_a, val_a in enumerate(values):
     for ind_b, val_b in enumerate(values[ind_a + 1:], ind_a + 1):
         for ind_c, val_c in enumerate(values[ind_b + 1:], ind_b + 1):
             if val_a + val_b + val_c == target_sum:
-                print(str(val_a) + "+" + str(val_b) + "+" + str(val_c) + "=" + str(target_sum))
+                print("{}+{}+{}={}".format(val_a, val_b, val_c, target_sum))
                 product = val_a * val_b * val_c
-                print(str(val_a) + "*" + str(val_b) + "*" + str(val_c) + "=" + str(product))
+                print("{}*{}*{}={}".format(val_a, val_b, val_c, product))
