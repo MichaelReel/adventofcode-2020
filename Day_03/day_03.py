@@ -1,8 +1,5 @@
 #!/env/python3
 
-import re
-
-
 text_file = open("Day_03/input", "r")
 lines = [x.strip() for x in text_file.readlines()]
 
