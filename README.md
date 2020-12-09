@@ -1,4 +1,4 @@
-# adventofcode-2020
+# Advent of Code 2020
 https://adventofcode.com/2020
 
 To run
@@ -12,4 +12,5 @@ python3 Day_05/day_05.py
 python3 Day_06/day_06.py
 python3 Day_07/day_07.py
 python3 Day_08/day_08.py
+python3 Day_09/day_09.py
 ```
