@@ -27,7 +27,7 @@ print(
         next_bus, next_time, wait_time
     )
 )
-print("Part 01: Wait time by bus: " + str(wait_time * next_bus))
+print("Part 01: (Wait time) x (bus): " + str(wait_time * next_bus))
 
 
 # Part 02
@@ -57,13 +57,14 @@ bus_offsets = sorted(bus_offsets, key=lambda k: k['bus'], reverse=True)
 timestamp = -bus_offsets[0]["pos"]
 current_jump = bus_offsets[0]["bus"]
 
-best_match_ind = -1
-
+iterations = 0
 for sub_ind in range(1, len(bus_offsets) + 1):
     sub_list = bus_offsets[:sub_ind]
     while not time_is_contest_result(timestamp, sub_list):
         timestamp += current_jump
+        iterations += 1
     # We've found a point were some buses align. Increment faster!
     current_jump = math.prod([x["bus"] for x in sub_list])
 
+print("{} iterations to find solution".format(iterations))
 print("Part 02: Contest Solution: " + str(timestamp))
