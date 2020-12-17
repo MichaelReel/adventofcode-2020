@@ -20,4 +20,5 @@ python3 Day_13/day_13.py
 python3 Day_14/day_14.py
 python3 Day_15/day_15.py
 python3 Day_16/day_16.py
+python3 Day_17/day_17.py
 ```
