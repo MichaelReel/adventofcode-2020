@@ -74,4 +74,5 @@ def cellular_automata(in_tiles: dict) -> dict:
 
 for i in range(1, 101):
     tile_map = cellular_automata(tile_map)
-    print("Day {}: {}".format(i, len(tile_map)))
+
+print("Part 02: Black side up tiles: {}".format(len(tile_map)))
